@@ -39,6 +39,7 @@
       <a href="#" class="logo">Sanjay<span> Kushwah</span></a>
       <nav>
         <a href="#services">Services</a>
+        <a href="#about">About</a>
         <a href="#process">Process</a>
         <a href="#pricing">Pricing</a>
         <a href="#faq">FAQ</a>
@@ -58,6 +59,8 @@
           <a href="#pricing" class="btn btn-ghost">See packages</a>
         </div>
         <ul class="trust">
+          <li>AWS Certified Solutions Architect</li>
+          <li>7+ years in production cloud</li>
           <li>Fixed price, no surprises</li>
           <li>Read-only access for audits</li>
           <li>Infrastructure as code you own</li>
@@ -87,7 +90,50 @@
       </div>
     </section>
 
-    <section id="process" class="section alt">
+    <section id="about" class="section alt">
+      <div class="wrap">
+        <h2>Who you'll work with</h2>
+        <div class="about">
+          <div>
+            <p class="lead">I'm Sanjay Kushwah, a Senior DevOps &amp; Cloud Engineer with 7+ years of building and running production infrastructure on AWS, Azure and GCP. I'm an AWS Certified Solutions Architect.</p>
+            <p>I've built cloud platforms for healthcare (HIPAA-aligned EHR systems), banking (an anti-money-laundering platform for a major European bank), AI SaaS and telecom. I've also led a team of 10+ engineers. You work directly with me, not a junior handed your account.</p>
+            <ul class="certs">
+              <li>AWS Certified Solutions Architect – Associate</li>
+              <li>AWS Certified Cloud Practitioner</li>
+            </ul>
+            <p><a href="https://www.linkedin.com/in/sanjaykushwah31/" target="_blank" rel="noopener">View my LinkedIn profile →</a></p>
+          </div>
+          <div class="stats">
+            <div><strong>94%</strong><span>faster deployments after standardising Terraform</span></div>
+            <div><strong>67%</strong><span>less server downtime with proactive monitoring</span></div>
+            <div><strong>92%</strong><span>less manual effort through Ansible automation</span></div>
+            <div><strong>100+</strong><span>CI/CD pipelines built for 50+ applications</span></div>
+          </div>
+        </div>
+
+        <h3 class="sub">Selected work</h3>
+        <div class="grid">
+          <article class="card">
+            <h3>Banking: AML platform</h3>
+            <p>Containerised a bank's anti-money-laundering application on Kubernetes and Red Hat OpenShift. Replaced hard-coded credentials with HashiCorp Vault and built Azure DevOps release pipelines.</p>
+          </article>
+          <article class="card">
+            <h3>Healthcare: EHR platforms</h3>
+            <p>Designed HIPAA-aligned, highly available AWS infrastructure in Terraform (VPC, RDS, S3, CloudFront, IAM). Automated delivery with Jenkins and CodePipeline and added SonarQube quality gates.</p>
+          </article>
+          <article class="card">
+            <h3>Platform modernisation</h3>
+            <p>Led a migration from a PHP/Laravel/MySQL stack to Next.js, Node.js, PostgreSQL and MongoDB, improving performance and scalability.</p>
+          </article>
+          <article class="card">
+            <h3>AI SaaS: CI/CD at scale</h3>
+            <p>Automation that creates and maintains 100+ pipelines across AWS, Azure, GitHub, Bitbucket and Jenkins, including Azure Container Apps deployments, cutting deployment effort by 60%.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="process" class="section">
       <div class="wrap">
         <h2>How it works</h2>
         <ol class="steps">
@@ -136,7 +182,7 @@
       <p class="note">Indian startups: INR pricing available on request.</p>
     </section>
 
-    <section id="faq" class="section alt">
+    <section id="faq" class="section">
       <div class="wrap">
         <h2>FAQ</h2>
         <details><summary>Do you need full access to our cloud account?</summary><p>No. Audits use a read-only IAM role that you create and can revoke any time.</p></details>
