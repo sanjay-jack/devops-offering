@@ -112,22 +112,47 @@
         </div>
 
         <h3 class="sub">Selected work</h3>
-        <div class="grid">
+        <p class="note">Client names are kept confidential. Each example is real production work.</p>
+        <div class="grid work">
           <article class="card">
-            <h3>Banking: AML platform</h3>
-            <p>Containerised a bank's anti-money-laundering application on Kubernetes and Red Hat OpenShift. Replaced hard-coded credentials with HashiCorp Vault and built Azure DevOps release pipelines.</p>
+            <p class="tag">Fintech · AI finance automation</p>
+            <h3>Secure multi-cloud foundation on AWS &amp; GCP</h3>
+            <p>Terraform landing zones on both clouds: 15 AWS modules (ECS, RDS, WAF, GuardDuty, Secrets Manager) and 15 GCP modules (VPC Service Controls, Cloud Armor, IAP, Workload Identity). Separate QA, UAT and production environments, with billing budgets on both clouds.</p>
           </article>
           <article class="card">
-            <h3>Healthcare: EHR platforms</h3>
-            <p>Designed HIPAA-aligned, highly available AWS infrastructure in Terraform (VPC, RDS, S3, CloudFront, IAM). Automated delivery with Jenkins and CodePipeline and added SonarQube quality gates.</p>
+            <p class="tag">Finance · Reporting platform</p>
+            <h3>AWS → Azure migration</h3>
+            <p>Designed the target Azure platform in Terraform: private endpoints, Key Vault with managed identity, PostgreSQL Flexible Server with Entra ID login, Application Gateway, Bastion, automated VM backup and Azure Monitor alerting.</p>
           </article>
           <article class="card">
-            <h3>Platform modernisation</h3>
-            <p>Led a migration from a PHP/Laravel/MySQL stack to Next.js, Node.js, PostgreSQL and MongoDB, improving performance and scalability.</p>
+            <p class="tag">SaaS · 4+ products</p>
+            <h3>Reusable ECS Fargate blueprint</h3>
+            <p>One Terraform blueprint reused across 4+ client products: VPC, load balancer, ECS, RDS, EFS, SES and cost budgets. Deploys from GitHub Actions use OIDC (no stored cloud keys) with least-privilege IAM, so a new product goes live in days, not weeks.</p>
           </article>
           <article class="card">
-            <h3>AI SaaS: CI/CD at scale</h3>
-            <p>Automation that creates and maintains 100+ pipelines across AWS, Azure, GitHub, Bitbucket and Jenkins, including Azure Container Apps deployments, cutting deployment effort by 60%.</p>
+            <p class="tag">Climate tech · Carbon credits</p>
+            <h3>Event-driven blockchain data pipeline</h3>
+            <p>Serverless ingest → preprocess → blockchain → notify pipeline built from 7 container-based AWS Lambdas, with ECS-hosted APIs, a Next.js frontend and a blockchain indexer, plus security scanning on every repository.</p>
+          </article>
+          <article class="card">
+            <p class="tag">AI SaaS · Chatbot &amp; avatars</p>
+            <h3>25-service AI platform, fully containerised</h3>
+            <p>About 25 Python microservices plus a vector database, with dev, QA, R&amp;D and production environments. Deploys to Azure Container Apps through GitHub Actions and Bitbucket, with SonarQube quality gates and supply-chain malware checks.</p>
+          </article>
+          <article class="card">
+            <p class="tag">Database performance</p>
+            <h3>Connection pooling for 5,000 clients</h3>
+            <p>PgBouncer in transaction-pooling mode on Azure Container Apps handles up to 5,000 client connections on a 150-connection pool, protecting PostgreSQL during traffic spikes without a bigger, costlier database.</p>
+          </article>
+          <article class="card">
+            <p class="tag">Banking · Compliance</p>
+            <h3>Anti-money-laundering platform</h3>
+            <p>Containerised a European bank's AML application on Kubernetes and Red Hat OpenShift, replaced hard-coded credentials with HashiCorp Vault, and built Azure DevOps release pipelines.</p>
+          </article>
+          <article class="card">
+            <p class="tag">Healthcare · HIPAA-aligned</p>
+            <h3>Electronic health record platforms</h3>
+            <p>Highly available AWS infrastructure in Terraform (VPC, RDS, S3, CloudFront, IAM) for two EHR products, with Jenkins and CodePipeline delivery and SonarQube quality gates.</p>
           </article>
         </div>
       </div>

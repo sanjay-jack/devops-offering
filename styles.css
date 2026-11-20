@@ -69,3 +69,5 @@ form input, form select, form textarea { display: block; width: 100%; margin-top
 .certs li::before { content: "★ "; color: var(--accent); }
 .sub { margin: 48px 0 20px; font-size: 1.4rem; }
 @media (max-width: 760px) { .about { grid-template-columns: 1fr; } }
+.tag { font-size: .8rem; font-weight: 700; text-transform: uppercase; letter-spacing: .04em; color: var(--accent-dark) !important; margin: 0 0 6px; }
+.work .card h3 { font-size: 1.1rem; }
